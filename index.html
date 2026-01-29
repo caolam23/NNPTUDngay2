@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm - NNPTUD Ngày 2</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+        h1 { text-align: center; color: #333; }
+        #product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body { padding: 15px; }
+        .category { color: #888; font-size: 0.9em; text-transform: uppercase; }
+        .price { color: #e74c3c; font-weight: bold; font-size: 1.2em; margin: 10px 0; }
+        .title { font-size: 1.1em; font-weight: bold; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Danh sách sản phẩm</h1>
+    <div id="product-list"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
